@@ -14,12 +14,7 @@ import org.openqa.selenium.WebElement;
 //@JSite("https://jdi-testing.github.io/jdi-light/")
 public class SiteJdi {
     public static HomePage homePage;
-    public static JDIPerformancePage performancePage;
     public static ContactFormPage contactFormPage;
-    public static ContactsPage contactsPage;
-    public static DatesPage datesPage;
-    public static Html5Page html5Page;
-    public static UsersPage usersPage;
     @Css("form") public static Form<User> loginForm;
 
     @Css(".profile-photo [ui=label]") public static UIElement userName;

@@ -9,11 +9,7 @@ import static org.mytests.tests.states.States.shouldBeLoggedIn;
 import static org.mytests.tests.states.States.shouldBeLoggedOut;
 import static org.mytests.uiobjects.example.entities.Defaults.DEFAULT_CONTACT;
 import static org.mytests.uiobjects.example.entities.Defaults.DEFAULT_USER;
-import static org.mytests.uiobjects.example.site.SiteJdi.contactFormPage;
-import static org.mytests.uiobjects.example.site.SiteJdi.contactsPage;
-import static org.mytests.uiobjects.example.site.SiteJdi.homePage;
-import static org.mytests.uiobjects.example.site.SiteJdi.loginForm;
-import static org.mytests.uiobjects.example.site.SiteJdi.userIcon;
+import static org.mytests.uiobjects.example.site.SiteJdi.*;
 import static org.mytests.uiobjects.example.site.pages.ContactFormPage.contactForm;
 
 public class FormTests extends TestsInit {
@@ -37,9 +33,8 @@ public class FormTests extends TestsInit {
     @Test
     public void fillContactsTest() {
         shouldBeLoggedIn();
-        contactsPage.shouldBeOpened();
-        Form<Contacts> contactFrom = contactsPage.asForm();
-        contactFrom.submit(DEFAULT_CONTACT);
-        contactFrom.check(DEFAULT_CONTACT);
+        contactFormPage.shouldBeOpened();
+        contactForm.submit(DEFAULT_CONTACT);
+        contactForm.check(DEFAULT_CONTACT);
     }
 }

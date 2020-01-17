@@ -1,11 +1,8 @@
 package org.mytests.tests.states;
 
 import com.epam.jdi.light.elements.composite.WebPage;
-import com.epam.jdi.tools.FileUtils;
 import io.qameta.allure.Step;
 import org.mytests.uiobjects.example.entities.User;
-
-import java.io.File;
 
 import static org.mytests.uiobjects.example.site.SiteJdi.*;
 

@@ -1,5 +1,5 @@
 # JDI Light project template - parallel execution
-Template for running tests based on JDI framework in a multy-threaded mode
+Template for running tests based on JDI framework in a multi-thread mode
 To run new UI test automation just download and open this project
 Powered by [JDI Light](https://github.com/jdi-testing/jdi-light) and Selenium
 
@@ -22,5 +22,6 @@ http://pix.my/o/5KPsyr?1547398089
 6. Use as a template for your own project: 
 * just remove all content from **src/main/.../example** folder, add your Page Objects
 * replace tests in **src/test/.../example** folder with your tests
+* to change multi-thread settings go to the **src/test/resources/general_parallel_classes.xml** (you may use standard TestNG settings)
 
 7. TestNg Retry and before after listeners: You can also modify retrying tests rules (now it is set as 1 retry for each test) and actions before/after all tests (now it prints out test name and result) in the **org.mytests.tests.testng** folder

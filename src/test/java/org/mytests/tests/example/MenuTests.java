@@ -15,10 +15,8 @@ public class MenuTests extends TestsInit {
     public void menuTest() {
         States.shouldBeLoggedIn();
         homePage.shouldBeOpened();
-        leftMenu.select(Service, Dates);
-        datesPage.checkOpened();
-        leftMenu.select(ElementsPacks, HTML5);
-        html5Page.checkOpened();
+        leftMenu.select(Service, ContactForm);
+        contactFormPage.checkOpened();
     }
     @Test
     public void customMenuTest() {
@@ -26,10 +24,5 @@ public class MenuTests extends TestsInit {
         homePage.shouldBeOpened();
         menu.select(ContactForm);
         assertEquals(menu.selected(), ContactForm.value);
-        menu.select(Service, Dates);
-        menu.is().selected(Dates.value);
-        datesPage.checkOpened();
-        leftMenu.select(ElementsPacks, HTML5);
-        html5Page.checkOpened();
     }
 }

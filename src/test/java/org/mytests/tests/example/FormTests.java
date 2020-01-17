@@ -9,13 +9,16 @@ import static org.mytests.tests.states.States.shouldBeLoggedIn;
 import static org.mytests.tests.states.States.shouldBeLoggedOut;
 import static org.mytests.uiobjects.example.entities.Defaults.DEFAULT_CONTACT;
 import static org.mytests.uiobjects.example.entities.Defaults.DEFAULT_USER;
-import static org.mytests.uiobjects.example.site.SiteJdi.*;
+import static org.mytests.uiobjects.example.site.SiteJdi.contactFormPage;
+import static org.mytests.uiobjects.example.site.SiteJdi.contactsPage;
+import static org.mytests.uiobjects.example.site.SiteJdi.homePage;
+import static org.mytests.uiobjects.example.site.SiteJdi.loginForm;
+import static org.mytests.uiobjects.example.site.SiteJdi.userIcon;
 import static org.mytests.uiobjects.example.site.pages.ContactFormPage.contactForm;
 
 public class FormTests extends TestsInit {
 
     @Test
-//            (threadPoolSize = 5, invocationCount = 5, timeOut = 15000)
     public void loginTest() {
         shouldBeLoggedOut();
         userIcon.click();

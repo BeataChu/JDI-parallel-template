@@ -62,8 +62,6 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/general_parallel_classes.xml</suiteXmlFile>
-                        <suiteXmlFile>src/test/resources/general_parallel_methods.xml</suiteXmlFile>
-                        <suiteXmlFile>src/test/resources/general_parallel_tests.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
